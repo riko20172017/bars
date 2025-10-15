@@ -1,11 +1,9 @@
 const groups = require("./groups.json");
 
-get_work_plan(groups);
-// console.log(myData)
-async function get_work_plan(groups) {
+
+async function get_work_plans(groups) {
   for (let index = 0; index < groups.length; index++) {
     const group = groups[index];
-    console.log(group.group_actual_name);
     const course_number = group.group_actual_name.split(" ")[2];
     const group_id = group.id;
     const sub_periods = await get_sub_periods(group_id);
@@ -86,3 +84,6 @@ async function get_work_plan(group_id, sub_period_id) {
   const work_plan = await response.json();
   return work_plan.rows;
 }
+
+
+get_work_plans(groups);
