@@ -182,20 +182,6 @@
     "id": 2878
   },
   {
-    "__str__": "ОЭВМ-5 - 1 курс",
-    "group_actual_name": "ОЭВМ-5 - 1 курс",
-    "speciality_name": "ОЭВМ",
-    "form_master_fullname": "",
-    "curator_fullname": "",
-    "master_fullname": "",
-    "primary_education_level_name": "Не определен",
-    "edu_level": "Базовый",
-    "graduation": "Нет",
-    "correctional_group": "Нет",
-    "unit_code": "ГБПОУ \"КБГТК\"",
-    "id": 2879
-  },
-  {
     "__str__": "ПД-97 - 2 курс",
     "group_actual_name": "ПД-97 - 2 курс",
     "speciality_name": "Правоохранительная деятельность",
