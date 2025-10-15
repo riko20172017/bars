@@ -782,5 +782,19 @@
     "correctional_group": "Нет",
     "unit_code": "ГБПОУ \"КБГТК\"",
     "id": 2893
+  },
+  {
+    "__str__": "ЮД-39 - 1 курс",
+    "group_actual_name": "ЮД-39 - 1 курс",
+    "speciality_name": "Юриспруденция",
+    "form_master_fullname": "",
+    "curator_fullname": "",
+    "master_fullname": "",
+    "primary_education_level_name": "Основное общее образование",
+    "edu_level": "Базовый",
+    "graduation": "Нет",
+    "correctional_group": "Нет",
+    "unit_code": "ГБПОУ \"КБГТК\"",
+    "id": 2950
   }
 ]
