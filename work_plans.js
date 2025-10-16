@@ -1,6 +1,5 @@
 const groups = require("./groups.json");
 
-
 async function get_work_plans(groups) {
   for (let index = 0; index < groups.length; index++) {
     const group = groups[index];
@@ -31,9 +30,9 @@ async function get_sub_periods(group_id) {
         "sec-fetch-site": "same-origin",
         "x-requested-with": "XMLHttpRequest",
         "x-xsrftoken":
-          "cBD1E3Xidgjx621rpuPe4g5afRtrEvvyzTlvhBGqNv8VbtqHBRoEuZW9RIAWaWkO",
+          "PxwRgeJjzeUP8PW75bEt1NS7mHnQNqZsRPY4Mu4DTNIBoy2KdwXYQdTMpxDPfEvh",
         cookie:
-          "_ym_uid=1738241477713532996; _ym_d=1738241477; csrf_token_header_name=X-XSRFTOKEN; userNotifiedAboutCookieUsage=t; ssuz_sessionid=jv2ftt1dqvi3u1uhkb28k96a5c0vj04l; csrftoken=cBD1E3Xidgjx621rpuPe4g5afRtrEvvyzTlvhBGqNv8VbtqHBRoEuZW9RIAWaWkO",
+          "_ym_uid=1738241477713532996; _ym_d=1738241477; csrf_token_header_name=X-XSRFTOKEN; userNotifiedAboutCookieUsage=t; ssuz_sessionid=6ugmk9y8lykpn7zkurmmbastw5h0fskp; csrftoken=PxwRgeJjzeUP8PW75bEt1NS7mHnQNqZsRPY4Mu4DTNIBoy2KdwXYQdTMpxDPfEvh",
         Referer: "https://college.07.edu.o7.com/desk/",
       },
       body: `start=0&limit=50&m3_window_id=cmp_3801a17e&groups_id=${group_id}`,
@@ -72,9 +71,9 @@ async function get_work_plan(group_id, sub_period_id) {
         "sec-fetch-site": "same-origin",
         "x-requested-with": "XMLHttpRequest",
         "x-xsrftoken":
-          "cBD1E3Xidgjx621rpuPe4g5afRtrEvvyzTlvhBGqNv8VbtqHBRoEuZW9RIAWaWkO",
+          "PxwRgeJjzeUP8PW75bEt1NS7mHnQNqZsRPY4Mu4DTNIBoy2KdwXYQdTMpxDPfEvh",
         cookie:
-          "_ym_uid=1738241477713532996; _ym_d=1738241477; csrf_token_header_name=X-XSRFTOKEN; userNotifiedAboutCookieUsage=t; ssuz_sessionid=jv2ftt1dqvi3u1uhkb28k96a5c0vj04l; csrftoken=cBD1E3Xidgjx621rpuPe4g5afRtrEvvyzTlvhBGqNv8VbtqHBRoEuZW9RIAWaWkO",
+          "_ym_uid=1738241477713532996; _ym_d=1738241477; csrf_token_header_name=X-XSRFTOKEN; userNotifiedAboutCookieUsage=t; ssuz_sessionid=6ugmk9y8lykpn7zkurmmbastw5h0fskp; csrftoken=PxwRgeJjzeUP8PW75bEt1NS7mHnQNqZsRPY4Mu4DTNIBoy2KdwXYQdTMpxDPfEvh",
         Referer: "https://college.07.edu.o7.com/desk/",
       },
       body: `group_id=${group_id}&subperiod_id=${sub_period_id}`,
@@ -84,6 +83,5 @@ async function get_work_plan(group_id, sub_period_id) {
   const work_plan = await response.json();
   return work_plan.rows;
 }
-
 
 get_work_plans(groups);
