@@ -7,6 +7,7 @@ async function get_work_plans(groups) {
     const course_number = group.group_actual_name.split(" ")[2];
     const group_id = group.id;
     const sub_periods = await get_sub_periods(group_id);
+    console.log(sub_periods)
     const sub_period_id = get_sub_period_id(sub_periods, course_number);
     const work_plan = await get_work_plan(group_id, sub_period_id);
 
