@@ -7,6 +7,7 @@ async function get_work_plans(groups) {
     const course_number = group.group_actual_name.split(" ")[2];
     const group_id = group.id;
     const sub_periods = await get_sub_periods(group_id);
+    console.log(sub_periods)
     const sub_period_id = get_sub_period_id(sub_periods, course_number);
     const work_plan = await get_work_plan(group_id, sub_period_id);
 
@@ -55,17 +56,22 @@ async function get_work_plans(groups) {
 }
 
 async function get_sub_periods(group_id) {
-  const response = await fetch(
-    "https://college.07.edu.o7.com/actions/group_subperiod/objectrowsactionforgroup",
-    {
-      headers,
-      body: `start=0&limit=50&groups_id=${group_id}`,
-      method: "POST",
-    }
-  );
-
-  const suberiods = await response.json();
-  return suberiods;
+  try {
+    const response = await fetch(
+      "https://college.07.edu.o7.com/actions/group_subperiod/objectrowsactionforgroup",
+      {
+        headers,
+        body: "start=0&limit=50&m3_window_id=cmp_277a6c24&groups_id=2100&filter=",
+        method: "POST",
+      }
+    );
+    const suberiods = await response.json();
+    return suberiods;
+  } catch (error) {
+    console.log("group_id:", group_id);
+    console.error("get_sub_periods:", error);
+    return;
+  }
 }
 
 async function get_work_plan(group_id, sub_period_id) {
