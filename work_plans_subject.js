@@ -1,7 +1,9 @@
+const fs = require("fs");
 const groups = require("./groups.json");
 const headers = require("./credential.json");
 
 async function get_work_plans(groups) {
+  let data = ``;
   for (let index = 0; index < groups.length; index++) {
     const group = groups[index];
     const course_number = group.group_actual_name.split(" ")[2];
@@ -47,11 +49,15 @@ async function get_work_plans(groups) {
         .slice(0, -2)
         .join(" ");
 
-      console.log(
-        `${group.group_actual_name}*${plan.employers}*${plan.name}*${wps}`
-      );
+      data += `"${group.group_actual_name}","${plan.employers}","${plan.name}","${wps}"\n`;
     }
+    console.log(`${group.group_actual_name}`);
   }
+
+  fs.writeFile("data.csv", data, "utf-8", (err) => {
+    if (err) console.log(err);
+    else console.log("Data saved");
+  });
 }
 
 async function get_sub_periods(group_id) {
@@ -60,7 +66,7 @@ async function get_sub_periods(group_id) {
       "https://college.07.edu.o7.com/actions/group_subperiod/objectrowsactionforgroup",
       {
         headers,
-        body: "start=0&limit=50&m3_window_id=cmp_277a6c24&groups_id=2100&filter=",
+        body: `start=0&limit=50&groups_id=${group_id}`,
         method: "POST",
       }
     );
