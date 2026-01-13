@@ -7,7 +7,7 @@ async function show_students(groups) {
 
   for (let index = 0; index < students.length; index++) {
     const student = students[index];
-    console.log(`${student.fullname}*${student.actual_group_name}`);
+    console.log(`${student.fullname}*${student.actual_group_name}*${student.gender}*${student.date_of_birth}`);
   }
 }
 

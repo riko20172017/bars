@@ -167,7 +167,7 @@ function get_sub_period_id(sub_periods, course_number) {
   const sub_period = sub_periods.rows.filter(
     (sub_period) =>
       sub_period.period__grouplevel__course == course_number &&
-      sub_period.phase_id == 8
+      sub_period.phase_id == 9 // Для 1 полугодния надо написать 8
   );
 
   return sub_period[0].id;

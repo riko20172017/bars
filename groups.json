@@ -126,20 +126,6 @@
     "id": 2430
   },
   {
-    "__str__": "ИПД-4 - 3 курс",
-    "group_actual_name": "ИПД-4 - 3 курс",
-    "speciality_name": "Информационные системы и программирование",
-    "form_master_fullname": "",
-    "curator_fullname": "Хандогий Елена Николаевна",
-    "master_fullname": "",
-    "primary_education_level_name": "Основное общее образование",
-    "edu_level": "",
-    "graduation": "Нет",
-    "correctional_group": "Нет",
-    "unit_code": "ГБПОУ \"КБГТК\"",
-    "id": 2431
-  },
-  {
     "__str__": "ИПД-5 - 2 курс",
     "group_actual_name": "ИПД-5 - 2 курс",
     "speciality_name": "Информационные системы и программирование",
@@ -420,20 +406,6 @@
     "id": 2887
   },
   {
-    "__str__": "СВД-10 - 3 курс",
-    "group_actual_name": "СВД-10 - 3 курс",
-    "speciality_name": "Сварщик (ручной и частично механизированной сварки (наплавки)",
-    "form_master_fullname": "",
-    "curator_fullname": "Алоев Алим Адмирович",
-    "master_fullname": "",
-    "primary_education_level_name": "Основное общее образование",
-    "edu_level": "",
-    "graduation": "Да",
-    "correctional_group": "Нет",
-    "unit_code": "ГБПОУ \"КБГТК\"",
-    "id": 2436
-  },
-  {
     "__str__": "СВД-11 - 2 курс",
     "group_actual_name": "СВД-11 - 2 курс",
     "speciality_name": "Сварщик (ручной и частично механизированной сварки (наплавки)",
@@ -502,20 +474,6 @@
     "correctional_group": "Нет",
     "unit_code": "ГБПОУ \"КБГТК\"",
     "id": 2427
-  },
-  {
-    "__str__": "ССАД-8 - 3 курс",
-    "group_actual_name": "ССАД-8 - 3 курс",
-    "speciality_name": "Сетевое и системное администрирование",
-    "form_master_fullname": "",
-    "curator_fullname": "Килова Фатима Нургалиевна",
-    "master_fullname": "",
-    "primary_education_level_name": "Основное общее образование",
-    "edu_level": "",
-    "graduation": "Нет",
-    "correctional_group": "Нет",
-    "unit_code": "ГБПОУ \"КБГТК\"",
-    "id": 2426
   },
   {
     "__str__": "ССАД-9 - 2 курс",
@@ -698,20 +656,6 @@
     "correctional_group": "Нет",
     "unit_code": "ГБПОУ \"КБГТК\"",
     "id": 2438
-  },
-  {
-    "__str__": "ЮД-35 - 3 курс",
-    "group_actual_name": "ЮД-35 - 3 курс",
-    "speciality_name": "Правоохранительная деятельность",
-    "form_master_fullname": "",
-    "curator_fullname": "Нечитайлова Надежда Федоровна",
-    "master_fullname": "",
-    "primary_education_level_name": "Основное общее образование",
-    "edu_level": "",
-    "graduation": "Нет",
-    "correctional_group": "Нет",
-    "unit_code": "ГБПОУ \"КБГТК\"",
-    "id": 2439
   },
   {
     "__str__": "ЮД-36 - 3 курс",
